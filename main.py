@@ -1,16 +1,3 @@
-# from usr_inp import usr_ipt
-# from operations import add,sub,div,rmdr,pwr,flr_div
-# name = input('Enter name: ')
-# print('Hello ' + name + ' welcome to basic calculator')
-# a , b = usr_ipt()
-
-# # add(a,b)
-# # sub(a,b)
-# # div(a,b)
-# # rmdr(a,b)
-# # pwr(a,b)
-# # flr_div(a,b)
-
 from usr_inp import usr_inp
 from operations import add,sub,div,multp,pwr,fl_div,remdr
 
@@ -21,7 +8,6 @@ operation = input('Kindly choose and Operation from the options listed below: \n
 a , b = usr_inp()
 feed = operation.lower()
 
-#try adding the operators to the 'or' list
 if feed in ('add','addition'):
     print(add(a,b))
 
@@ -44,14 +30,3 @@ elif feed in ('div','division'):
     print(div(a,b))
 else:
     print('Invalid operation. Please try again. ')
-
-
-# elif feed == 'div' or 'division':
-#     print(div(a,b))
-
-#print(feed)
-#print(a)
-# print(operation)
-
-#     print('Error: wrong input format. Input a word value')
-# if isinstance(operation,str) is not True:
